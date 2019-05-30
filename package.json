@@ -1,0 +1,22 @@
+{
+  "name": "Muzig",
+  "version": "1.0.0",
+  "description": "class examples",
+  "main": " ",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "express": "^4.16.4",
+    "express-fileupload": "^1.1.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.2.5",
+    "mongoose": "^5.5.9",
+    "nodemon": "^1.19.0",
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app"
+  },
+  "author": "lakshman  veti",
+  "license": "MIT"
+}
