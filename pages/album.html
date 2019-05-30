@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Muzig | Discover</title>
+        <link href="css/styles.css" rel="stylesheet"/>
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+        <link href="css/player.css" rel="stylesheet">
+    </head>
+    <body class="album">
+        <header class="box col">
+            <div class="logo"><a href="/"><i class="fa fa-music" aria-hidden="true"></i> Muzig</a></div>
+            <nav class="box valign">
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Albums</a></li>
+                <li><a href="#">Artists</a></li>
+            </nav>
+        </header>
+        <!--content for page-->
+        <section class="box row" style="margin:80px;">
+                <article>
+                    <div><h1 class="main-title">Have old time</h1></div>
+                    <p  style="width:504px;">Lorem ipsum dolor sit amet consectetuer adipiscing elit Lorem ipsum dolor sit amet consectetuer adipiscing elit</p>
+                    <div class="box stats valign">
+                        <a href="javascript:playTrack(0);" class="round grad"><i class="fa fa-play" aria-hidden="true"></i></a>
+                        <span class="count text-fade">3456</span>
+                        <a href="#" class="nobtn"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                        <span class="count text-fade">25</span>
+                    </div>      
+                </article>
+                <article class="box albums tracklist row">
+                    <div class="box valign">
+                        <span class="sno">1</span>
+                        <div class="thumb" style="background-image:url(images/albums/c6.jpg)"  onclick="playTrack(0);"></div>
+                        <div class="meta" style="flex:2">
+                            <h4>Go Wild</h4>
+                            <h5 class="text-fade">All This Is</h5>
+                        </div>
+                        <div class="box stats">
+                            <span class="count text-fade">2:34</span>
+                            <a href="#" class="nobtn"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                            <a href="#" class="nobtn"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                        </div>
+                    </div>   
+                    <div class="box valign">
+                        <span class="sno">2</span>
+                        <div class="thumb" style="background-image:url(images/albums/c23.jpg)"  onclick="playTrack(1)"></div>
+                        <div class="meta" style="flex:2">
+                            <h4>Go Wild</h4>
+                            <h5 class="text-fade">The Forsaken - Broadwing Studio </h5>
+                        </div>
+                        <div class="box stats">
+                            <span class="count text-fade">1:24</span>
+                            <a href="#" class="nobtn"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                            <a href="#" class="nobtn"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                        </div>
+                    </div>   
+                    <div class="box valign">
+                        <span class="sno">3</span>
+                        <div class="thumb" style="background-image:url(images/albums/c26.jpg)" onclick="playTrack(2);"></div>
+                        <div class="meta" style="flex:2" >
+                            <h4>Go Wild</h4>
+                            <h5 class="text-fade">All The King's Men - Broadwing Studio</h5>
+                        </div>
+                        <div class="box stats">
+                            <span class="count text-fade">3:11</span>
+                            <a href="#" class="nobtn"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                            <a href="#" class="nobtn"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                        </div>
+                    </div>                                              
+                </article>
+        </section>
+        <!--content for page end-->
+
+        <!--player-->
+        <div class="container mzplayer">
+                <div class="column add-bottom">
+                    <div id="mainwrap">
+                        <div id="nowPlay">
+                            <span id="npAction">Paused...</span><span id="npTitle"></span>
+                        </div>
+                        <div id="audiowrap">
+                            <div id="audio0">
+                                <audio id="audio1" preload controls>Your browser does not support HTML5 Audio! 😢</audio>
+                            </div>
+                            <div id="tracks" style="display:none">
+                                <a id="btnPrev">&larr;</a><a id="btnNext">&rarr;</a>
+                            </div>
+                        </div>
+                        <div id="plwrap">
+                            <ul id="plList" style="display:none"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!--player end-->     
+
+        <footer class="box center row" style="margin:80px">
+            <nav class="box col">
+                <article class="logo">
+                        <i class="fa fa-music" aria-hidden="true"></i>
+                </article>
+                <article>
+                    <h3>Pages</h3>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </article>
+                <article>
+                        <h3>Muzig</h3>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">My tracks</a></li>
+                        <li><a href="#">My Albums</a></li>
+                        <li><a href="#">My Artists</a></li>
+                </article>
+                <article>
+                        <h3>Help</h3>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Online Chat</a></li>
+                        <li><a href="#">What's new</a></li>
+                </article>
+            </nav>
+            <section class="box center">
+                <article class="footer-text">
+                        &copy; Copyright. muzig - Music sites, All rights reserved.
+                </article>
+            </section>
+        </footer>
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>    
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/plyr/3.4.7/plyr.min.js'></script>
+        <script src="js/player.js"></script>
+    </body>
+
+</html>

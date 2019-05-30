@@ -1,0 +1,12 @@
+doctype html
+html
+    head
+        title=title
+    body
+        div.container
+            for person in per
+                div.row
+                    div.thumb
+                        img(src=`images/${person.thumb}`)
+                    div
+                        h2=person.name   

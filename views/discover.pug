@@ -1,0 +1,73 @@
+doctype html
+html
+  head
+    title Muzig | Discover
+    link(href="css/styles.css" rel="stylesheet")
+    link(href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet")
+  body.discover
+    header.box.col
+      .logo
+        a(href="/")
+          i.fa.fa-music(aria-hidden="true")
+          |  Muzig
+      nav.box.valign
+        li
+          a(href="#") Discover
+        li
+          a(href="#") Albums
+        li
+          a(href="#") Artists
+    // content for page
+    section.box.row(style="margin:80px;")
+      article(style="width:504px;")
+        div
+          h1.main-title Amazing Songs
+        p
+          | Lorem ipsum dolor sit amet consectetuer adipiscing elit Lorem ipsum dolor sit amet consectetuer adipiscing elit
+        .box
+          a.btn.grad(href="#") Explore
+          a.btn(href="#") Share
+      article.box.featured.albums
+        for album in albums
+            div
+                .thumb(style=`background-image:url(images/albums/${album.thumb})`)
+                .meta
+                    h3
+                    a(href=`album?id=${album.id}`)=album.title
+                    h4.text-fade=album.artists
+    // content for page end
+    footer.box.center.row(style="margin:20px")
+      nav.box.col
+        article.logo
+          i.fa.fa-music(aria-hidden="true")
+        article
+          h3 Pages
+          li
+            a(href="#") About Us
+          li
+            a(href="#") Services
+          li
+            a(href="#") Blog
+          li
+            a(href="#") Contact
+        article
+          h3 Muzig
+          li
+            a(href="#") Profile
+          li
+            a(href="#") My tracks
+          li
+            a(href="#") My Albums
+          li
+            a(href="#") My Artists
+        article
+          h3 Help
+          li
+            a(href="#") Support
+          li
+            a(href="#") Online Chat
+          li
+            a(href="#") What's new
+      section.box.center
+        article.footer-text
+          | © Copyright. muzig - Music sites, All rights reserved.

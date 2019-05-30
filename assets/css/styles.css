@@ -1,0 +1,164 @@
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-color: #08080b;
+    background-position: center center;
+    background-size: 100%;
+    color: white;
+}
+body.home{
+    background-image: url(../images/bg1.jpg);
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+.box{
+    display: flex;
+}
+.row{
+    flex-direction: column;
+}
+.col{
+    flex-direction: row;
+}
+header{
+    padding: 30px !important;
+    background: rgba(0,0,0,.85);
+    position: fixed; /*add later*/
+    width: 100%;
+}
+.logo{
+    font-size: 20px;
+    width: 100px;
+}
+li{
+   list-style: none;     
+}
+header li{
+    display: inline-block;
+   margin: 0 20px;
+}
+a{text-decoration: none}
+.center{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.main-title{
+    color: #fff;
+    font-size: 4em;
+    padding: 0;
+    margin: 50px 10px 10px 10px;
+}
+.btn{
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #fff;
+    margin: 0 10px;
+    border-radius: 4px;
+}
+
+
+footer nav article{
+    text-align: left;
+    padding: 10px;
+    margin: 20px;
+}
+footer nav article.logo{
+    font-size: 66px;
+    color: white;
+}    
+footer nav article h3{
+    color: #a8afbb;
+    font-size: 1em;
+}
+footer nav article a, footer .footer-text{
+    color: #fff;
+    font-size: 12px;
+}
+footer nav li{margin: 10px 0px;}
+
+/*common and home styles end*/
+
+
+body.discover{
+    background-image:url(../images/bg3.jpg);
+}
+p{
+    color: white;
+    margin: 10px;
+}
+.grad{
+    background: #c02afe linear-gradient(to right,#c02afe,#562afe);
+}
+.thumb{
+    width: 150px;
+    height: 150px;
+    background-position: center;
+    background-size: 100%;
+    border-radius: 3px;
+}
+.featured{
+    margin: 40px 10px 10px 10px;
+}
+.featured>div{
+    margin-right: 30px;
+}
+.featured .meta{text-align: center;}
+.featured .meta h3{
+    color:white;
+}
+.featured .meta h4{
+    color: #ccc;
+}
+
+/*album*/
+body.album{
+    background-image:url(../images/bg4.jpg);
+}
+.round{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 2;
+}
+
+.stats>*{
+    margin: 10px;
+    color: white;
+    align-items: center;
+}
+.valign{
+    align-items: center;
+}
+.text-fade {
+    opacity: .65;
+}
+.tracklist{
+    margin: 40px 0px;
+}
+.tracklist>div{
+    width:700px;
+}    
+.tracklist .thumb{
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    cursor: pointer;
+}
+.tracklist .meta{
+    margin-left: 20px;
+
+}
+.sno{
+    padding-right: 20px;
+}
+.tracklist .meta h4, .tracklist .meta h5{margin: 2px;}
