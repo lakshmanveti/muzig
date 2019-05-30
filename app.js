@@ -32,6 +32,7 @@ app.get('/album', function(req, resp){
     resp.sendFile(__dirname+"/pages/album.html");
 });
 
-app.listen(9000, function(){
+var port = process.env.PORT || 9000;
+app.listen(port, function(){
     console.log("node server is running @ 9000");
 });
